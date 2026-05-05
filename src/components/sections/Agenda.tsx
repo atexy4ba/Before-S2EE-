@@ -19,21 +19,9 @@ interface AgendaItem {
 
 const agendaItems: AgendaItem[] = [
   {
-    time: "8H30",
-    title: "Check-in",
-    desc: "Accueil des participants, vérification des inscriptions et remise des badges. Installez-vous et préparez-vous pour une journée riche en apprentissages.",
-    tags: [{ label: "Accueil" }],
-  },
-  {
-    time: "9H00",
-    title: "Cérémonie d'ouverture",
-    desc: "Mot de bienvenue par le club ETIC et présentation du déroulement de la journée. Découvrez la vision derrière Before S2EE et ce que cette édition vous réserve.",
-    tags: [{ label: "Ouverture", accent: true }],
-  },
-  {
-    time: "9H30",
-    title: "Talk 1 — Comment se vendre sans expérience + stage d'ouvrier",
-    desc: "Moussa Boussekine partage son parcours inspirant, les défis qu'il a relevés et les leçons clés qui l'ont mené au succès. Une conférence motivante pour lancer votre carrière.",
+    time: "Talk 1",
+    title: "Comment se vendre sans expérience + stage d'ouvrier",
+    desc: "Moussa Boussekine partage des conseils concrets pour valoriser son profil, parler de son potentiel et tirer le meilleur d'un stage d'ouvrier, même sans grande expérience professionnelle.",
     speakers: [
       {
         name: "Moussa Boussekine",
@@ -44,28 +32,26 @@ const agendaItems: AgendaItem[] = [
     tags: [{ label: "Talk", accent: true }],
   },
   {
-    time: "11H00",
+    time: "Talk 2",
+    title: "Partage d'expérience",
+    desc: "Mounir Ouadi partage son parcours, ses choix et les apprentissages qui peuvent aider les participants à mieux se projeter dans leur propre début de carrière.",
+    speakers: [
+      {
+        name: "Mounir Ouadi",
+        photo: "/mounir-ouadi.jpg",
+      },
+    ],
+    tags: [{ label: "Talk", accent: true }],
+  },
+  {
+    time: "Workshop",
     title: "Correction de CV",
-    desc: "Ahmed Addala, expert en recrutement, analyse et corrige vos CV en direct. Apportez votre CV et repartez avec des conseils personnalisés pour le rendre irrésistible.",
+    desc: "Ahmed Addala analyse et corrige vos CV en direct. Apportez votre CV et repartez avec des conseils personnalisés pour mieux structurer votre profil et capter l'attention des recruteurs.",
     speakers: [{ name: "Ahmed Addala", photo: "/addala.PNG" }],
     tags: [{ label: "Workshop" }],
   },
   {
-    time: "13H00 - 13H30",
-    title: "Pause déjeuner",
-    desc: "Profitez d'une pause bien méritée pour vous restaurer et réseauter avec les autres participants et intervenants dans une ambiance conviviale.",
-    tags: [{ label: "Pause" }],
-  },
-  {
-    time: "13H30",
-    title: "Talk 2 — Partage d'expérience",
-    desc: "Un talk inspirant pour vous aider à tracer votre chemin professionnel à travers des témoignages et conseils pratiques.",
-    tags: [
-      { label: "Talk", accent: true },
-    ],
-  },
-  {
-    time: "15H00",
+    time: "Workshop",
     title: "Simulation d'entretien",
     desc: "Mettez-vous en conditions réelles face à Aimen Khelifati et Ahmed Addala. Entraînez-vous, recevez un feedback constructif et gagnez en confiance pour vos futurs entretiens.",
     speakers: [
@@ -75,7 +61,7 @@ const agendaItems: AgendaItem[] = [
     tags: [{ label: "Workshop", accent: true }],
   },
   {
-    time: "17H00",
+    time: "Clôture",
     title: "Cérémonie de clôture",
     desc: "Synthèse de la journée, remerciements et annonce des prochaines étapes. Repartez avec des outils concrets, un réseau élargi et une vision claire pour votre avenir professionnel.",
     tags: [{ label: "Clôture", accent: true }],
