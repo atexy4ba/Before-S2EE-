@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[next]/internal/font/google/plus_jakarta_sans_2e18fe6d.module.css"],"sourcesContent":["@font-face {\n    font-family: 'Plus Jakarta Sans Fallback';\n    src: local(\"Arial\");\n    ascent-override: 98.88%;\ndescent-override: 21.15%;\nline-gap-override: 0.00%;\nsize-adjust: 104.98%;\n\n}\n.className {\n    font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback';\n    font-style: normal;\n\n}\n.variable {\n    --font-heading: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback';\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;AAKA","ignoreList":[0]}}]
-}

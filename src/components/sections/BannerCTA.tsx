@@ -1,5 +1,5 @@
 const FORM_URL =
-  "https://docs.google.com/forms/d/146Ox8lYQQvzyhoNOalwBxFFYXNjJ0biDP72s0Zxb8_S/viewform?edit_requested=true";
+  "https://docs.google.com/forms/d/146Ox8lYQQvzyhoNOalwBxFFYXNjJ0biDP72s0Zxb8_s/viewform?edit_requested=true";
 
 export default function BannerCTA() {
   return (

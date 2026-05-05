@@ -3,6 +3,7 @@
 const { spawn } = require('child_process');
 const net = require('net');
 const os = require('os');
+const path = require('path');
 
 function getLocalIP() {
   const interfaces = os.networkInterfaces();
@@ -40,13 +41,14 @@ function findFreePort(startPort) {
   console.log(`   Network: http://${localIP}:${port}`);
   console.log('\n💡 Make sure your phone is on the same Wi-Fi network\n');
 
+  const nextCli = path.join(__dirname, 'node_modules', 'next', 'dist', 'bin', 'next');
   const nextProcess = spawn(
-    'npx',
-    ['next', 'dev', '--hostname', '0.0.0.0', '--port', String(port)],
+    process.execPath,
+    [nextCli, 'dev', '--hostname', '0.0.0.0', '--port', String(port)],
     {
       stdio: 'inherit',
-      cwd: process.cwd(),
-      shell: true,
+      cwd: __dirname,
+      shell: false,
     }
   );
 

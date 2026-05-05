@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const FORM_URL =
-  "https://docs.google.com/forms/d/146Ox8lYQQvzyhoNOalwBxFFYXNjJ0biDP72s0Zxb8_S/viewform?edit_requested=true";
+  "https://docs.google.com/forms/d/146Ox8lYQQvzyhoNOalwBxFFYXNjJ0biDP72s0Zxb8_s/viewform?edit_requested=true";
 
 const container = {
   hidden: { opacity: 0 },
@@ -71,7 +71,9 @@ export default function Hero() {
           </div>
 
           <a
-            href="#cta"
+            href={FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#1A237E] text-white font-[var(--font-body)] font-bold text-xs md:text-sm px-4 md:px-6 py-2.5 md:py-3 hover:bg-[#0d1557] transition-colors"
           >
             Inscrivez-vous
