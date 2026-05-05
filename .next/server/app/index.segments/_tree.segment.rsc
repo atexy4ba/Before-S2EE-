@@ -1,0 +1,9 @@
+:HL["/_next/static/chunks/0vpj2khskr2v0.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap","style"]
+:HL["/figma/training-noise.svg","image"]
+:HL["/figma/faq-chevron.svg","image"]
+:HL["/figma/cta-vector.svg","image"]
+:HL["/figma/cta-vector-left.svg","image"]
+:HL["/figma/cta-noise.svg","image"]
+:HL["/figma/footer-bg.svg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"YnPiXfIZCQpBuHFK9BlkY"}
