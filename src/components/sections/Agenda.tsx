@@ -59,17 +59,9 @@ const agendaItems: AgendaItem[] = [
   {
     time: "13H30",
     title: "Talk 2 — Partage d'expérience",
-    desc: "Boukeha Mohamed Akram partage son expérience et ses conseils pratiques pour réussir votre insertion professionnelle. Un talk inspirant pour vous aider à tracer votre chemin. (En ligne)",
-    speakers: [
-      {
-        name: "Boukeha Mohamed Akram",
-        photo: "/boukehamohamedakram.webp",
-        role: "En ligne",
-      },
-    ],
+    desc: "Un talk inspirant pour vous aider à tracer votre chemin professionnel à travers des témoignages et conseils pratiques.",
     tags: [
       { label: "Talk", accent: true },
-      { label: "En ligne", accent: true },
     ],
   },
   {

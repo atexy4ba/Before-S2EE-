@@ -6,12 +6,22 @@ const sessions = [
     time: "18h00 - 19h30",
     title: "Formation CV",
     desc: "Apprenez à structurer et valoriser votre CV pour capter l'attention des recruteurs.",
+    speaker: {
+      name: "Ahmed Addala",
+      photo: "/addala.PNG",
+      role: "En ligne",
+    },
   },
   {
     day: "Vendredi",
     time: "18h00",
     title: "Formation LinkedIn",
     desc: "Optimisez votre profil LinkedIn et développez votre réseau professionnel.",
+    speaker: {
+      name: "Boukeha Mohamed Akram",
+      photo: "/boukehamohamedakram.webp",
+      role: "En ligne",
+    },
   },
 ];
 
@@ -46,6 +56,25 @@ export default function Training() {
                   <p className="font-[var(--font-body)] text-sm md:text-base leading-6 text-white/60">
                     {session.desc}
                   </p>
+                  {"speaker" in session && session.speaker && (
+                    <div className="flex items-center gap-3 mt-2">
+                      <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px] overflow-hidden bg-white/5 ring-1 ring-white/10 flex-shrink-0">
+                        <img
+                          alt={session.speaker.name}
+                          src={session.speaker.photo}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="font-[var(--font-body)] text-sm md:text-base font-semibold text-white">
+                          {session.speaker.name}
+                        </span>
+                        <span className="font-[var(--font-body)] text-xs text-white/50">
+                          {session.speaker.role}
+                        </span>
+                      </div>
+                    </div>
+                  )}
                   <div className="absolute left-[-9px] top-[24px] md:top-[28px] w-3.5 md:w-4 h-3.5 md:h-4 bg-white/20 group-hover:bg-[#FFEDD1] group-hover:scale-125 transition-all" />
                 </div>
               </RevealOnScroll>
