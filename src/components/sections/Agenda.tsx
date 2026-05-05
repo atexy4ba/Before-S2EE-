@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 interface Speaker {
@@ -163,15 +163,6 @@ function DetailContent({ item }: { item: AgendaItem }) {
 export default function Agenda() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 767px)");
-    setIsMobile(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
 
   const toggleExpand = useCallback(
     (i: number) => {
@@ -196,9 +187,8 @@ export default function Agenda() {
               Agenda & Intervenants — S2EE 17
             </h2>
             <p className="font-[var(--font-body)] text-xs sm:text-sm md:text-base leading-relaxed text-white/80">
-              {isMobile
-                ? "Touchez un créneau pour afficher les détails."
-                : "Survolez un créneau pour afficher les détails de la session."}
+              <span className="md:hidden">Touchez un créneau pour afficher les détails.</span>
+              <span className="hidden md:inline">Survolez un créneau pour afficher les détails de la session.</span>
             </p>
           </RevealOnScroll>
 

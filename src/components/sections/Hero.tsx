@@ -25,8 +25,10 @@ const fadeUp = {
 
 export default function Hero() {
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const mq = window.matchMedia("(max-width: 767px)");
     setReducedMotion(mq.matches);
     const h = (e: MediaQueryListEvent) => setReducedMotion(e.matches);
@@ -82,7 +84,7 @@ export default function Hero() {
       </nav>
 
       {/* ── Hero body ── */}
-      <div className="flex-1 flex items-center relative">
+      <div className="flex-1 flex items-start relative">
         {/* ── Wireframe grid ── */}
         <div
           className="absolute inset-0 pointer-events-none"
@@ -104,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* ── Content ── */}
-        <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-20">
+        <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-20 pt-4 sm:pt-6 md:pt-10 lg:pt-16">
           <motion.div
             variants={container}
             initial="hidden"
@@ -185,7 +187,7 @@ export default function Hero() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="w-[260px] sm:w-[340px] md:w-[500px] lg:w-[720px] h-auto"
-            animate={reducedMotion ? {} : { y: [0, -8, 0] }}
+            animate={mounted && reducedMotion ? {} : { y: [0, -8, 0] }}
             transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
           >
             <path

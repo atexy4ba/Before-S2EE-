@@ -15,19 +15,15 @@ export default function Footer() {
       </div>
 
       <RevealOnScroll className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-12">
-        <div className="flex flex-col md:grid md:grid-cols-12 gap-6 md:gap-8 items-center text-center md:text-left">
-          <div className="md:col-span-4 flex flex-col gap-3 md:gap-4 items-center md:items-start">
-            <img
-              alt="Octenium"
-              src="/logooctenium.png"
-              className="h-8 md:h-10 w-auto object-contain"
-            />
-            <span className="font-[var(--font-heading)] text-[10px] md:text-xs font-semibold uppercase text-[#64748b]">
-              &copy; 2024 BEFORE S2EE. STRUCTURED INNOVATION.
-            </span>
-          </div>
+        <div className="flex flex-col items-center gap-8 md:gap-10">
+          {/* Big centered logo */}
+          <img
+            alt="Octenium"
+            src="/logooctenium.png"
+            className="h-16 sm:h-20 md:h-28 lg:h-36 w-auto object-contain drop-shadow-[0_0_24px_rgba(255,237,209,0.15)]"
+          />
 
-          <div className="md:col-span-8 flex flex-wrap gap-4 md:gap-8 justify-center md:justify-end">
+          <div className="flex flex-wrap gap-4 md:gap-8 justify-center">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -38,6 +34,10 @@ export default function Footer() {
               </a>
             ))}
           </div>
+
+          <span className="font-[var(--font-heading)] text-[10px] md:text-xs font-semibold uppercase text-[#64748b]">
+            &copy; 2024 BEFORE S2EE. STRUCTURED INNOVATION.
+          </span>
         </div>
       </RevealOnScroll>
     </footer>
