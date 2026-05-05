@@ -17,9 +17,11 @@ export default function Footer() {
       <RevealOnScroll className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-12">
         <div className="flex flex-col md:grid md:grid-cols-12 gap-6 md:gap-8 items-center text-center md:text-left">
           <div className="md:col-span-4 flex flex-col gap-3 md:gap-4 items-center md:items-start">
-            <span className="font-[var(--font-body)] text-base md:text-lg font-bold text-white">
-              Before S2EE
-            </span>
+            <img
+              alt="Octenium"
+              src="/logooctenium.png"
+              className="h-8 md:h-10 w-auto object-contain"
+            />
             <span className="font-[var(--font-heading)] text-[10px] md:text-xs font-semibold uppercase text-[#64748b]">
               &copy; 2024 BEFORE S2EE. STRUCTURED INNOVATION.
             </span>
